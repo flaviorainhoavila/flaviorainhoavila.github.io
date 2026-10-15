@@ -91,8 +91,8 @@ footer{color:var(--muted);border-top:1px solid var(--rule);padding-top:1.25rem}
   <div class="meta mono"><span>D.Sc. Electrical Engineering, UFRJ</span><span>Evanston, Illinois</span><span>US citizen</span></div>
   <div class="links">
     <a class="btn" href="https://www.linkedin.com/in/flavioavila" target="_blank" rel="noopener">LinkedIn</a>
-    <a class="btn" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a>
-    <a class="btn" href="https://scholar.google.com/citations?user=YOUR-ID" target="_blank" rel="noopener">Google Scholar</a>
+    <a class="btn" href="https://github.com/flaviorainhoavila" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://scholar.google.com/citations?user=rVOrmIEAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
     <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
   </div>
 </header>
@@ -106,7 +106,7 @@ footer{color:var(--muted);border-top:1px solid var(--rule);padding-top:1.25rem}
         <h3>ASR robustness and intelligibility-aware speech enhancement</h3>
         <p>How much does recognition accuracy fall as input quality drops, and for which systems? I compare a commercial recognizer with open-source models such as Whisper across controlled degradations, then use learned quality and intelligibility predictors as training objectives for enhancement, so the enhancer optimizes for what the recognizer and the listener need rather than for signal-level scores.</p>
         <div class="tags"><span class="tag">ASR evaluation</span><span class="tag">WER</span><span class="tag">speech enhancement</span><span class="tag">PyTorch</span></div>
-        <div class="rowlinks"><span class="status">In progress</span><a href="https://github.com/YOUR-USERNAME/asr-robustness" target="_blank" rel="noopener">Code</a><a href="#writing">Write-up</a></div>
+        <div class="rowlinks"><span class="status">In progress</span><a href="https://github.com/flaviorainhoavila/asr-robustness" target="_blank" rel="noopener">Code</a><a href="#writing">Write-up</a></div>
       </div>
     </li>
   </ul>
@@ -122,16 +122,16 @@ footer{color:var(--muted);border-top:1px solid var(--rule);padding-top:1.25rem}
         <h3>Audio quality gate and diarization pipeline</h3>
         <p>A reimplementation, on public speech corpora, of the preprocessing I built for a production speech analytics platform: format and integrity checks, noise and interference screening, normalization and speaker diarization, served behind a small API with tests and CI.</p>
         <div class="tags"><span class="tag">Python</span><span class="tag">diarization</span><span class="tag">FastAPI</span><span class="tag">CI</span></div>
-        <div class="rowlinks"><a href="https://github.com/YOUR-USERNAME/audio-quality-gate" target="_blank" rel="noopener">Code</a></div>
+        <div class="rowlinks"><a href="https://github.com/flaviorainhoavila/audio-quality-gate" target="_blank" rel="noopener">Code</a></div>
       </div>
     </li>
     <li class="item">
       <span class="when">2008 – 12 · 2026</span>
       <div class="body">
         <h3>Bayesian methods for audio signals</h3>
-        <p>Code from my doctoral research, published as originally written in MATLAB, with a Python port and tests added later.</p>
-        <div class="tags"><span class="tag">Bayesian inference</span><span class="tag">MCMC</span><span class="tag">MATLAB</span><span class="tag">Python</span></div>
-        <div class="rowlinks"><a href="https://github.com/YOUR-USERNAME/bayesian-audio" target="_blank" rel="noopener">Code</a><span class="todo">add dissertation link</span></div>
+        <p>Code from my master's and doctoral research on Bayesian restoration of degraded audio (impulsive noise, nonlinear distortion, clipping), published as originally written, with a Python port and tests added later.</p>
+        <div class="tags"><span class="tag">Bayesian inference</span><span class="tag">MCMC</span><span class="tag">audio restoration</span><span class="tag">Python</span></div>
+        <div class="rowlinks"><a href="https://github.com/flaviorainhoavila/bayesian-audio" target="_blank" rel="noopener">Code</a></div>
       </div>
     </li>
     <li class="item">
@@ -140,7 +140,7 @@ footer{color:var(--muted);border-top:1px solid var(--rule);padding-top:1.25rem}
         <h3>Regression detection for ML evaluation</h3>
         <p>A small library for deciding whether a model change is a real improvement: paired comparisons over fixed seeds, bootstrap confidence intervals and false-discovery control across many metrics. It generalizes the evaluation practice behind release gating on a team I worked on.</p>
         <div class="tags"><span class="tag">statistics</span><span class="tag">bootstrap</span><span class="tag">MLflow</span></div>
-        <div class="rowlinks"><a href="https://github.com/YOUR-USERNAME/ml-regression-checks" target="_blank" rel="noopener">Code</a></div>
+        <div class="rowlinks"><a href="https://github.com/flaviorainhoavila/ml-regression-checks" target="_blank" rel="noopener">Code</a></div>
       </div>
     </li>
   </ul>
@@ -175,7 +175,7 @@ footer{color:var(--muted);border-top:1px solid var(--rule);padding-top:1.25rem}
 
 <section id="research" aria-labelledby="h-research">
   <h2 id="h-research">Publications and patents</h2>
-  <p class="note">15+ peer-reviewed papers and a book chapter in IEEE journals, Interspeech, ICASSP, WASPAA and EUSIPCO. Full list on <a href="https://scholar.google.com/citations?user=YOUR-ID" target="_blank" rel="noopener">Google Scholar</a>.</p>
+  <p class="note">Selected work below. 15+ peer-reviewed papers and a book chapter in IEEE journals, Interspeech, ICASSP, WASPAA and EUSIPCO. Full list on <a href="https://scholar.google.com/citations?user=rVOrmIEAAAAJ" target="_blank" rel="noopener">Google Scholar</a>.</p>
   <ul class="list">
     <li class="item">
       <span class="when">2020</span>
@@ -185,25 +185,51 @@ footer{color:var(--muted);border-top:1px solid var(--rule);padding-top:1.25rem}
       </div>
     </li>
     <li class="item">
-      <span class="when"><span class="todo">year</span></span>
+      <span class="when">2021</span>
       <div class="body">
-        <h3><span class="todo">Selected paper title</span></h3>
-        <p class="mono"><span class="todo">Authors · Venue</span></p>
-        <div class="rowlinks"><a href="#">PDF</a><a href="#">Code</a></div>
+        <h3>Investigating feature selection and explainability for COVID-19 diagnostics from cough sounds</h3>
+        <p class="mono">F. Avila, A. H. Poorjam, D. Mittal, C. Dognin, A. Muguli, R. Kumar et al. · Interspeech 2021</p>
       </div>
     </li>
     <li class="item">
-      <span class="when"><span class="todo">year</span></span>
+      <span class="when">2020</span>
       <div class="body">
-        <h3><span class="todo">Selected paper title</span></h3>
-        <p class="mono"><span class="todo">Authors · Venue</span></p>
-        <div class="rowlinks"><a href="#">PDF</a></div>
+        <h3>Bayesian restoration of audio degraded by low-frequency pulses modeled via Gaussian process</h3>
+        <p class="mono">H. T. de Carvalho, F. R. Avila, L. W. P. Biscainho · IEEE Journal of Selected Topics in Signal Processing 15(1)</p>
+      </div>
+    </li>
+    <li class="item">
+      <span class="when">2017</span>
+      <div class="body">
+        <h3>Audio soft declipping based on constrained weighted least squares</h3>
+        <p class="mono">F. R. Ávila, M. P. Tcheou, L. W. P. Biscainho · IEEE Signal Processing Letters 24(9)</p>
+      </div>
+    </li>
+    <li class="item">
+      <span class="when">2016</span>
+      <div class="body">
+        <h3>Bayesian blind identification of nonlinear distortion with memory for audio applications</h3>
+        <p class="mono">F. R. Avila, H. T. Carvalho, L. W. P. Biscainho · IEEE Signal Processing Letters 23(4)</p>
       </div>
     </li>
     <li class="item">
       <span class="when">2012</span>
       <div class="body">
-        <h3>Doctoral dissertation: Bayesian methods for audio signal processing</h3>
+        <h3>Bayesian restoration of audio signals degraded by impulsive noise modeled as individual pulses</h3>
+        <p class="mono">F. R. Avila, L. W. P. Biscainho · IEEE Transactions on Audio, Speech, and Language Processing 20(9)</p>
+      </div>
+    </li>
+    <li class="item">
+      <span class="when">2012</span>
+      <div class="body">
+        <h3>A parametric objective quality assessment tool for speech signals degraded by acoustic echo</h3>
+        <p class="mono">L. O. Nunes, F. R. Avila, A. F. Tygel, L. W. P. Biscainho, B. Lee, A. Said et al. · IEEE Transactions on Audio, Speech, and Language Processing 20(8)</p>
+      </div>
+    </li>
+    <li class="item">
+      <span class="when">2012</span>
+      <div class="body">
+        <h3>Doctoral dissertation: Bayesian methods for restoration of audio signals with nonlinear distortions</h3>
         <p class="mono">D.Sc., Electrical Engineering, Federal University of Rio de Janeiro</p>
       </div>
     </li>
