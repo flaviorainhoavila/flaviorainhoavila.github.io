@@ -5,12 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Flavio Avila</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Flavio Avila: speech, audio and statistical signal processing. Research, code and writing.">
+<meta name="description" content="Flavio Avila: speech, audio and statistical signal processing. Research and engineering.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600&family=Literata:opsz,wght@7..72,400;7..72,600&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
-html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}
 /* Layout: one reading column with a spectrogram band as the masthead; sections are plain, ruled lists. */
 :root{
   --bg:#f5f7f8; --surface:#ffffff; --ink:#15202a; --muted:#56636e; --rule:#d9e0e5;
@@ -25,7 +24,7 @@ html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}
 :root[data-theme="dark"]{
   --bg:#0f1519; --surface:#151d22; --ink:#e3e9ec; --muted:#9aa8b1; --rule:#28343b;
   --accent:#5fb7c0; --accent-soft:#16292d; --heat:#e0a35e; --todo:#e3b56a; --todo-bg:#2a2216; color-scheme:dark }
-
+ 
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.6;
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
@@ -41,7 +40,7 @@ h2::after{content:"";flex:1;height:1px;background:var(--rule)}
 h3{font-size:1.1rem}
 p{margin:0}
 .mono{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.02em}
-
+ 
 /* Masthead */
 header{display:flex;flex-direction:column;gap:1.25rem}
 .spec{width:100%;height:110px;display:block;border-radius:6px;background:var(--surface);border:1px solid var(--rule)}
@@ -52,7 +51,7 @@ header{display:flex;flex-direction:column;gap:1.25rem}
 .btn{font-family:var(--f-mono);font-size:.8rem;padding:.45rem .8rem;border:1px solid var(--rule);border-radius:4px;
   background:var(--surface);color:var(--ink);text-decoration:none;cursor:pointer}
 .btn:hover{border-color:var(--accent);color:var(--accent)}
-
+ 
 /* Sections */
 section{display:flex;flex-direction:column;gap:1.25rem}
 .list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
@@ -71,7 +70,7 @@ section{display:flex;flex-direction:column;gap:1.25rem}
 .contact{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem}
 .email{font-family:var(--f-mono);font-size:.9rem;user-select:all}
 footer{color:var(--muted);border-top:1px solid var(--rule);padding-top:1.25rem}
-
+ 
 @media (max-width:560px){
   .item{grid-template-columns:1fr}
   .when{padding-top:0}
@@ -80,9 +79,9 @@ footer{color:var(--muted);border-top:1px solid var(--rule);padding-top:1.25rem}
 </style>
 </head>
 <body>
-
+ 
 <div class="wrap">
-
+ 
 <header>
   <canvas class="spec" id="spec" aria-label="Spectrogram of a synthetic voiced sound with harmonics and formant bands"></canvas>
   <div class="spec-cap mono"><span>0–4 kHz · harmonics of a voiced vowel</span><span>t →</span></div>
@@ -91,12 +90,11 @@ footer{color:var(--muted);border-top:1px solid var(--rule);padding-top:1.25rem}
   <div class="meta mono"><span>D.Sc. Electrical Engineering, UFRJ</span><span>Evanston, Illinois</span><span>US citizen</span></div>
   <div class="links">
     <a class="btn" href="https://www.linkedin.com/in/flavioavila" target="_blank" rel="noopener">LinkedIn</a>
-    <a class="btn" href="https://github.com/flaviorainhoavila" target="_blank" rel="noopener">GitHub</a>
     <a class="btn" href="https://scholar.google.com/citations?user=rVOrmIEAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
     <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
   </div>
 </header>
-
+ 
 <section id="work" aria-labelledby="h-work">
   <h2 id="h-work">Current work</h2>
   <ul class="list">
@@ -106,48 +104,12 @@ footer{color:var(--muted);border-top:1px solid var(--rule);padding-top:1.25rem}
         <h3>ASR robustness and intelligibility-aware speech enhancement</h3>
         <p>How much does recognition accuracy fall as input quality drops, and for which systems? I compare a commercial recognizer with open-source models such as Whisper across controlled degradations, then use learned quality and intelligibility predictors as training objectives for enhancement, so the enhancer optimizes for what the recognizer and the listener need rather than for signal-level scores.</p>
         <div class="tags"><span class="tag">ASR evaluation</span><span class="tag">WER</span><span class="tag">speech enhancement</span><span class="tag">PyTorch</span></div>
-        <div class="rowlinks"><span class="status">In progress</span><!-- <a href="https://github.com/flaviorainhoavila/asr-robustness" target="_blank" rel="noopener">Code</a> --></div>
+        <div class="rowlinks"><span class="status">In progress</span></div>
       </div>
     </li>
   </ul>
 </section>
-
-<!-- HIDDEN until published:
-<section id="code" aria-labelledby="h-code">
-  <h2 id="h-code">Code</h2>
-  <p class="note">Most of my industry code is proprietary, so these are research code published with its original dates, and reimplementations on public data of approaches I built in production. Each README says which is which.</p>
-  <ul class="list">
-    <li class="item">
-      <span class="when">2019 – 22 · 2026</span>
-      <div class="body">
-        <h3>Audio quality gate and diarization pipeline</h3>
-        <p>A reimplementation, on public speech corpora, of the preprocessing I built for a production speech analytics platform: format and integrity checks, noise and interference screening, normalization and speaker diarization, served behind a small API with tests and CI.</p>
-        <div class="tags"><span class="tag">Python</span><span class="tag">diarization</span><span class="tag">FastAPI</span><span class="tag">CI</span></div>
-        <div class="rowlinks"><a href="https://github.com/flaviorainhoavila/audio-quality-gate" target="_blank" rel="noopener">Code</a></div>
-      </div>
-    </li>
-    <li class="item">
-      <span class="when">2008 – 12 · 2026</span>
-      <div class="body">
-        <h3>Bayesian methods for audio signals</h3>
-        <p>Code from my master's and doctoral research on Bayesian restoration of degraded audio (impulsive noise, nonlinear distortion, clipping), published as originally written, with a Python port and tests added later.</p>
-        <div class="tags"><span class="tag">Bayesian inference</span><span class="tag">MCMC</span><span class="tag">audio restoration</span><span class="tag">Python</span></div>
-        <div class="rowlinks"><a href="https://github.com/flaviorainhoavila/bayesian-audio" target="_blank" rel="noopener">Code</a></div>
-      </div>
-    </li>
-    <li class="item">
-      <span class="when">2023 – 26 · 2026</span>
-      <div class="body">
-        <h3>Regression detection for ML evaluation</h3>
-        <p>A small library for deciding whether a model change is a real improvement: paired comparisons over fixed seeds, bootstrap confidence intervals and false-discovery control across many metrics. It generalizes the evaluation practice behind release gating on a team I worked on.</p>
-        <div class="tags"><span class="tag">statistics</span><span class="tag">bootstrap</span><span class="tag">MLflow</span></div>
-        <div class="rowlinks"><a href="https://github.com/flaviorainhoavila/ml-regression-checks" target="_blank" rel="noopener">Code</a></div>
-      </div>
-    </li>
-  </ul>
-</section>
--->
-
+ 
 <!-- HIDDEN until published:
 <section id="writing" aria-labelledby="h-writing">
   <h2 id="h-writing">Writing</h2>
@@ -176,7 +138,7 @@ footer{color:var(--muted);border-top:1px solid var(--rule);padding-top:1.25rem}
   </ul>
 </section>
 -->
-
+ 
 <section id="research" aria-labelledby="h-research">
   <h2 id="h-research">Publications and patents</h2>
   <p class="note">Selected work below. 15+ peer-reviewed papers and a book chapter in IEEE journals, Interspeech, ICASSP, WASPAA and EUSIPCO. Full list on <a href="https://scholar.google.com/citations?user=rVOrmIEAAAAJ" target="_blank" rel="noopener">Google Scholar</a>.</p>
@@ -239,7 +201,7 @@ footer{color:var(--muted);border-top:1px solid var(--rule);padding-top:1.25rem}
     </li>
   </ul>
 </section>
-
+ 
 <section id="experience" aria-labelledby="h-exp">
   <h2 id="h-exp">Experience</h2>
   <ul class="list">
@@ -249,7 +211,7 @@ footer{color:var(--muted);border-top:1px solid var(--rule);padding-top:1.25rem}
     <li class="item"><span class="when">2013 – 19</span><div class="body"><h3>Rio de Janeiro State University</h3><p>Associate Professor. Signal processing, detection and estimation theory, probability; graduate supervision and research in audio.</p></div></li>
   </ul>
 </section>
-
+ 
 <section id="contact" aria-labelledby="h-contact">
   <h2 id="h-contact">Contact</h2>
   <div class="contact">
@@ -258,10 +220,10 @@ footer{color:var(--muted);border-top:1px solid var(--rule);padding-top:1.25rem}
     <span class="mono" id="copied" aria-live="polite"></span>
   </div>
 </section>
-
+ 
 <footer class="mono">© 2026 Flavio Avila</footer>
 </div>
-
+ 
 <script>
 (function(){
   // Static synthetic spectrogram: a voiced vowel with a gliding pitch and three formant bands.
@@ -297,7 +259,7 @@ footer{color:var(--muted);border-top:1px solid var(--rule);padding-top:1.25rem}
   let t; window.addEventListener('resize',()=>{clearTimeout(t);t=setTimeout(draw,150);});
   if(window.matchMedia) window.matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change',draw);
   new MutationObserver(draw).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
-
+ 
   const btn=document.getElementById('copy'), out=document.getElementById('copied'), em=document.getElementById('email').textContent;
   btn.addEventListener('click',()=>{
     const ok=()=>{out.textContent='Copied';setTimeout(()=>out.textContent='',2000)};
