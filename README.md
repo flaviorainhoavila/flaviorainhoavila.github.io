@@ -106,12 +106,13 @@ footer{color:var(--muted);border-top:1px solid var(--rule);padding-top:1.25rem}
         <h3>ASR robustness and intelligibility-aware speech enhancement</h3>
         <p>How much does recognition accuracy fall as input quality drops, and for which systems? I compare a commercial recognizer with open-source models such as Whisper across controlled degradations, then use learned quality and intelligibility predictors as training objectives for enhancement, so the enhancer optimizes for what the recognizer and the listener need rather than for signal-level scores.</p>
         <div class="tags"><span class="tag">ASR evaluation</span><span class="tag">WER</span><span class="tag">speech enhancement</span><span class="tag">PyTorch</span></div>
-        <div class="rowlinks"><span class="status">In progress</span><a href="https://github.com/flaviorainhoavila/asr-robustness" target="_blank" rel="noopener">Code</a><a href="#writing">Write-up</a></div>
+        <div class="rowlinks"><span class="status">In progress</span><!-- <a href="https://github.com/flaviorainhoavila/asr-robustness" target="_blank" rel="noopener">Code</a> --></div>
       </div>
     </li>
   </ul>
 </section>
 
+<!-- HIDDEN until published:
 <section id="code" aria-labelledby="h-code">
   <h2 id="h-code">Code</h2>
   <p class="note">Most of my industry code is proprietary, so these are research code published with its original dates, and reimplementations on public data of approaches I built in production. Each README says which is which.</p>
@@ -145,7 +146,9 @@ footer{color:var(--muted);border-top:1px solid var(--rule);padding-top:1.25rem}
     </li>
   </ul>
 </section>
+-->
 
+<!-- HIDDEN until published:
 <section id="writing" aria-labelledby="h-writing">
   <h2 id="h-writing">Writing</h2>
   <ul class="list">
@@ -172,6 +175,7 @@ footer{color:var(--muted);border-top:1px solid var(--rule);padding-top:1.25rem}
     </li>
   </ul>
 </section>
+-->
 
 <section id="research" aria-labelledby="h-research">
   <h2 id="h-research">Publications and patents</h2>
