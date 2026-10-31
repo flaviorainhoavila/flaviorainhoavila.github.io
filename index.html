@@ -99,6 +99,15 @@ footer{color:var(--muted);border-top:1px solid var(--rule);padding-top:1.25rem}
   <h2 id="h-work">Current work</h2>
   <ul class="list">
     <li class="item">
+      <span class="when">2026 –</span>
+      <div class="body">
+        <h3>Real-time audio declipping</h3>
+        <p>Clipping flattens the peaks of an audio signal, and declipping estimates the lost peaks from the samples that survived. My published declipping methods work in batch, on the whole recording at once. This project builds streaming versions of them and measures what low latency costs in quality, comparing them against the original batch algorithms and a small learned causal model. The first release has a clipping simulator, the metrics, a least-squares baseline and the benchmark harness; latency and quality numbers will be reported as each milestone is measured.</p>
+        <div class="tags"><span class="tag">audio restoration</span><span class="tag">declipping</span><span class="tag">streaming DSP</span><span class="tag">benchmarking</span><span class="tag">Python</span></div>
+        <div class="rowlinks"><a href="https://github.com/flaviorainhoavila/realtime-declip" target="_blank" rel="noopener">Code</a><span class="status">In progress</span></div>
+      </div>
+    </li>
+    <li class="item">
       <span class="when">2026</span>
       <div class="body">
         <h3>Tracking an unknown number of aircraft with a miscalibrated radar</h3>
