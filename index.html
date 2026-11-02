@@ -108,12 +108,12 @@ footer{color:var(--muted);border-top:1px solid var(--rule);padding-top:1.25rem}
       </div>
     </li>
     <li class="item">
-      <span class="when">2026</span>
+      <span class="when">2026 –</span>
       <div class="body">
         <h3>Tracking an unknown number of aircraft with a miscalibrated radar</h3>
-        <p>Two radars watch inbound aircraft, and one of them has a range offset and alignment error that nobody has measured. A sequential reversible-jump MCMC tracker samples which aircraft exist, where they are and what the radar's bias is, all at once, then projects each track forward with its uncertainty. On 20 synthetic scenarios it removes the duplicate tracks a standard GNN-EKF tracker builds when the bias is ignored, cutting the mean OSPA error from 453 m to 86 m, and it brings the position NEES down from 12.5 to 2.2, close to the ideal of 2. It adapts the RJ-MCMC and blind distortion identification from my audio-restoration research to multi-target tracking, and the write-up includes where its uncertainty is still too small.</p>
+        <p>Two radars watch inbound aircraft, and one of them has a range offset and alignment error that nobody has measured. A standard tracker that ignores the bias builds duplicate tracks and reports overconfident uncertainty. I am building a sequential reversible-jump MCMC tracker that samples which aircraft exist, where they are and what the radar's bias is, all at once, then projects each track forward with its uncertainty, benchmarked against a GNN-EKF baseline with OSPA, cardinality and NEES. It adapts the RJ-MCMC and blind distortion identification from my audio-restoration research to multi-target tracking; results will be reported as they are measured.</p>
         <div class="tags"><span class="tag">multi-target tracking</span><span class="tag">RJ-MCMC</span><span class="tag">sensor registration</span><span class="tag">uncertainty quantification</span><span class="tag">Python</span></div>
-        <div class="rowlinks"><a href="https://github.com/flaviorainhoavila/rjmcmc-air-picture" target="_blank" rel="noopener">Code and write-up</a></div>
+        <div class="rowlinks"><span class="status">In progress</span></div>
       </div>
     </li>
     <li class="item">
